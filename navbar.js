@@ -25,7 +25,7 @@
   // Get the navbar
 
   function scrollCheck() {
-    console.log("y: " + window.pageYOffset);
+    //console.log("y: " + window.pageYOffset);
     if(window.pageYOffset >= 50) {
       mainNav.classList.add("scrolled-topNav");
     } else {
