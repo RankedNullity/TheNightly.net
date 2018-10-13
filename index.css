@@ -28,6 +28,7 @@
   --topNavHeight: 100px;
   --scrolledTopHeight: 50px;
 }
+
 /*-------------------------Image Manipulations-------------------------------*/
 .homeImg {
   /* Image was found at: https://www.newsweek.com/mystery-space-signal-low-frequency-fast-radio-burst-spotted-first-time-1055622*/
@@ -53,7 +54,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:50vh;
+  height:55vh;
 }
 .about1 {
   /* Image was found at: https://www.spacetelescope.org/news/heic1808/*/
@@ -66,6 +67,10 @@
 .about3 {
   /* Image Found: https://www.google.com/search?rlz=1C1ASVA_enUS723US723&biw=1099&bih=568&tbm=isch&sa=1&ei=S4PBW4P0GOa90PEPus25gAw&q=AI+HD+wallpaper&oq=AI+HD+wallpaper&gs_l=img.3..0j0i5i30j0i8i30l4.25474.27440..27508...0.0..0.112.688.14j1......1....1..gws-wiz-img.......35i39j0i67.yJR1wozN8Pg */
   background-image: url('images/AI.jpg');
+}
+.about4 {
+  /* Image found: https://www.google.com/search?rlz=1C1ASVA_enUS723US723&biw=1099&bih=601&tbm=isch&sa=1&ei=N5DBW7n_E5bK0PEP-eCZ4AY&q=nier+automata+wallpaper&oq=nier+automata+wallpaper&gs_l=img.3..0l10.28206.32832..32910...3.0..1.55.559.14......2....1..gws-wiz-img.....0..35i39j0i67.AbpPp_OAACM */
+  background-image:url('images/FunFacts.jpg');
 }
 .parallax {
     background-attachment: fixed;
@@ -86,6 +91,7 @@
 .description {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
+  flex-wrap: wrap;
 }
 .photo {
   background-image: url('images/Me.jpg');
@@ -101,6 +107,16 @@ p {
   font-family: 'Lato', sans-serif;
   line-height: 150%;
 }
+.doubleList {
+  flex: 0 0 50%;
+  max-width: 50%;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  flex-direction: row;
+  line-height: 150%;
+}
+
+
 /*---------------------------Navigation Bar----------------------------------*/
 .topNav {
   list-style: none;
@@ -228,6 +244,14 @@ body, html {
     height: 100%;
 
 }
-blockquote {
+blockquote, ul{
     font-family: 'Slabo 27px', serif;
+}
+li a {
+  text-decoration: none;
+  color: purple;
+}
+li a:hover {
+  color: blue;
+  transition: color 0.2s;
 }
