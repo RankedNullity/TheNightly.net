@@ -14,10 +14,9 @@
    */
   window.addEventListener("load", initialize);
 
-
+  let mainNav;
   function initialize() {
-    navBar = document.getElementById('mainNav');
-    navBarHeight= navBar.offsetTop;
+    mainNav = document.getElementById('mainNav');
   }
 
   // When the user scrolls the page, execute scrollCheck
@@ -26,10 +25,11 @@
   // Get the navbar
 
   function scrollCheck() {
-    if (window.scrollY >= navBarHeight) {
-      navBar.classList.add("sticky")
+    console.log("y: " + window.pageYOffset);
+    if(window.pageYOffset >= sticky) {
+      mainNav.classList.add("fixed-top");
     } else {
-      navBar.classList.remove("sticky");
+      mainNav.classList.remove("fixed-top");
     }
   }
   // Add the navBarHeightclass to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
