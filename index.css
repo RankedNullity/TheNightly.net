@@ -6,10 +6,12 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 .homeTitle {
   font-family: 'Lora', serif;
   font-size: 300%;
   color: white;
+  margin-bottom: 0;
 }
 
 .subTitle {
@@ -47,9 +49,23 @@
   height:100vh;
 }
 
+.backgroundSmall {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:50vh;
+}
 .about1 {
   /* Image was found at: https://www.spacetelescope.org/news/heic1808/*/
   background-image: url(http://cdn.spacetelescope.org/archives/images/screen/heic1808a.jpg);
+}
+.about2 {
+  /* Image Found:  http://staff.washington.edu/paymana/uw_photos.html */
+  background-image: url('images/UW.jpg');
+}
+.about3 {
+  /* Image Found: https://www.google.com/search?rlz=1C1ASVA_enUS723US723&biw=1099&bih=568&tbm=isch&sa=1&ei=S4PBW4P0GOa90PEPus25gAw&q=AI+HD+wallpaper&oq=AI+HD+wallpaper&gs_l=img.3..0j0i5i30j0i8i30l4.25474.27440..27508...0.0..0.112.688.14j1......1....1..gws-wiz-img.......35i39j0i67.yJR1wozN8Pg */
+  background-image: url('images/AI.jpg');
 }
 .parallax {
     background-attachment: fixed;
@@ -61,6 +77,29 @@
 /*--------------------------------------------------------------------------*/
 .textSeperator {
   background-color: white;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 40px 15px 40px 15px;
+  margin:auto;
+  justify-content: center;
+}
+.description {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.photo {
+  background-image: url('images/Me.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%%;
+
+}
+p {
+  font-size: 120%;
+  font-family: 'Lato', sans-serif;
+  line-height: 150%;
 }
 /*---------------------------Navigation Bar----------------------------------*/
 .topNav {
@@ -98,6 +137,9 @@
 .scrolled-topNav > .navButton {
   color:black;
 }
+.scrolled-topNav > .navButton:hover {
+  background-color: rgb(128,128,128, 0.8);
+}
 
 .topNav + * {
   padding-top: var(--topNavHeight);
@@ -115,6 +157,7 @@
   display:flex;
   flex-direction: column;
   transition: background-color 1s;
+  border-radius: 30px 30px 30px 30px;
 }
 
 .sideNav:hover > .navButton {
@@ -123,6 +166,8 @@
 
 .sideNav:hover {
   background-color: white;
+  box-shadow: 1px 1px;
+
 }
 
 .navButton:hover{
@@ -133,6 +178,12 @@
 #NameButton:hover{
     background-color: rgb(0, 143, 179, 0.4);
 }
+
+.scrolled-topNav > #NameButton:hover {
+  background-color: rgb(0, 143, 179, 0.8);
+  color: white;
+}
+
 
 .scrolled-topNav > #NameButton {
   color: rgb(0, 91, 161);
@@ -151,18 +202,16 @@
 }
 
 .titleContainer {
-  position:absolute;
-  top: 45%;
-  width:100%;
-  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
 }
 
 div {
   display: block;
-}
-
-h1 {
-  font-size: 100%;
 }
 
 .white {
@@ -173,8 +222,12 @@ body {
   margin:0;
 }
 strong {
-  font-size: 140%;
+  font-style: italic;
 }
 body, html {
     height: 100%;
+
+}
+blockquote {
+    font-family: 'Slabo 27px', serif;
 }
