@@ -60,7 +60,7 @@
 
 /*--------------------------------------------------------------------------*/
 .textSeperator {
-  
+  background-color: white;
 }
 /*---------------------------Navigation Bar----------------------------------*/
 .topNav {
@@ -150,9 +150,9 @@
   width: 100%;
 }
 
-.container {
+.titleContainer {
   position:absolute;
-  top:50%;
+  top: 45%;
   width:100%;
   text-align: center;
 }
