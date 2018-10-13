@@ -26,10 +26,10 @@
 
   function scrollCheck() {
     console.log("y: " + window.pageYOffset);
-    if(window.pageYOffset >= sticky) {
-      mainNav.classList.add("fixed-top");
+    if(window.pageYOffset >= 50) {
+      mainNav.classList.add("scrolled-topNav");
     } else {
-      mainNav.classList.remove("fixed-top");
+      mainNav.classList.remove("scrolled-topNav");
     }
   }
   // Add the navBarHeightclass to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position

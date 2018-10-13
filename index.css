@@ -6,9 +6,9 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Lora');
-.titleMain {
+.homeTitle {
   font-family: 'Lora', serif;
-  font-size: 250%;
+  font-size: 300%;
   color: white;
 }
 
@@ -18,24 +18,6 @@
   letter-spacing: 5px;
   color:white;
 }
-
-.space {
-  /* Image was found at: https://www.newsweek.com/mystery-space-signal-low-frequency-fast-radio-burst-spotted-first-time-1055622*/
-  background-image: url(https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/pass/pulsar-831502910.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.space2 {
-  /* Image was found at: https://www.spacetelescope.org/news/heic1808/*/
-  background-image: url(http://cdn.spacetelescope.org/archives/images/screen/heic1808a.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
 .cenX {
     text-align: center;
 }
@@ -44,7 +26,43 @@
   --topNavHeight: 100px;
   --scrolledTopHeight: 50px;
 }
+/*-------------------------Image Manipulations-------------------------------*/
+.homeImg {
+  /* Image was found at: https://www.newsweek.com/mystery-space-signal-low-frequency-fast-radio-burst-spotted-first-time-1055622*/
+  background-image: url(images/pulsar.jpg);
 
+}
+
+.firstBackground {
+  height: calc(100vh - var(--topNavHeight));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+
+.about1 {
+  /* Image was found at: https://www.spacetelescope.org/news/heic1808/*/
+  background-image: url(http://cdn.spacetelescope.org/archives/images/screen/heic1808a.jpg);
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------------------*/
+.textSeperator {
+  
+}
+/*---------------------------Navigation Bar----------------------------------*/
 .topNav {
   list-style: none;
   overflow: hidden;
@@ -61,16 +79,28 @@
   align-items: center;
 }
 
+.navButton{
+    float:left;
+    color: white;
+    padding: 14px 16px;
+    font-size: 125%;
+    text-decoration: none;
+    font-family:monospace;
+    transition: background-color 0.2s;
+    transition: color 0.2s;
+}
+
 .scrolled-topNav {
   height: var(--scrolledTopHeight);
+  background-color: white;
+}
+
+.scrolled-topNav > .navButton {
+  color:black;
 }
 
 .topNav + * {
   padding-top: var(--topNavHeight);
-}
-
-.scrolled-topNav + * {
-  padding-top: var(--scrolledTopHeight);
 }
 
 .sideNav {
@@ -87,47 +117,46 @@
   transition: background-color 1s;
 }
 
+.sideNav:hover > .navButton {
+  color:black;
+}
+
 .sideNav:hover {
-  background-color: gray;
-
-}
-
-.navButton{
-    float:left;
-    color: white;
-    padding: 14px 16px;
-    font-size: 125%;
-    text-decoration: none;
-    font-family:monospace;
-    transition: background-color 0.2s;
-}
-
-
-#NameButton:hover{
-    background-color: rgb(0, 143, 179, 0.5)
+  background-color: white;
 }
 
 .navButton:hover{
-    background-color: rgb(128,128,128, 0.5);
+    background-color: rgb(128,128,128, 0.4);
+    color: white;
 }
+
+#NameButton:hover{
+    background-color: rgb(0, 143, 179, 0.4);
+}
+
+.scrolled-topNav > #NameButton {
+  color: rgb(0, 91, 161);
+}
+
 
 #lastbutton {
     margin-right: 4%;
     margin-left: auto;
 }
 
+/*--------------------------------------------------------------------------*/
 .footer {
   bottom: 0;
   width: 100%;
 }
+
 .container {
-  width: 100%;
-  height: 500px;
-  max-height: 500px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align: center;
 }
+
 div {
   display: block;
 }
@@ -143,7 +172,9 @@ h1 {
 body {
   margin:0;
 }
-
 strong {
   font-size: 140%;
+}
+body, html {
+    height: 100%;
 }
