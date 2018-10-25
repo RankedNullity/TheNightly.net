@@ -1,6 +1,3 @@
-/*
- * Template file for module pattern to get you started with Lab 03.
- */
 (function() {
   "use strict";
   /*************************** Variables ******************************/
