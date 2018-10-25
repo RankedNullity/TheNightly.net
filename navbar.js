@@ -2,7 +2,7 @@
   "use strict";
   /*************************** Variables ******************************/
   let navBar;
-  let navBarHeight;
+  const navBarHeight = 50;
 
   /**
    * The starting point in our program, setting up a listener
@@ -23,7 +23,7 @@
 
   function scrollCheck() {
     //console.log("y: " + window.pageYOffset);
-    if(window.pageYOffset >= 50) {
+    if(window.pageYOffset >= navBarHeight) {
       mainNav.classList.add("scrolled-topNav");
     } else {
       mainNav.classList.remove("scrolled-topNav");
