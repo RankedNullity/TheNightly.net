@@ -7,14 +7,14 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Lato');
-.homeTitle {
+.home-title {
   font-family: 'Lora', serif;
   font-size: 300%;
   color: white;
   margin-bottom: 0;
 }
 
-.subTitle {
+.subtitle {
   font-family: 'Slabo 27px', serif;
   font-size: 30px;
   letter-spacing: 5px;
@@ -83,11 +83,13 @@
   margin:auto;
   justify-content: center;
 }
+
 .description {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
   flex-wrap: wrap;
 }
+
 .photo {
   background-image: url('images/Me.jpg');
   background-position: center;
@@ -97,12 +99,14 @@
   max-width: 33.333333%%;
 
 }
+
 p, aside {
   font-size: 120%;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
 }
-.doubleList {
+
+.double-list {
   flex: 0 0 50%;
   max-width: 50%;
   flex-wrap: wrap;
@@ -148,6 +152,7 @@ p, aside {
 .scrolled-top-nav > .nav-button {
   color:black;
 }
+
 .scrolled-top-nav > .nav-button:hover {
   background-color: rgba(128,128,128, 0.8);
 }
@@ -206,7 +211,7 @@ p, aside {
 }
 
 /*--------------------------------------------------------------------------*/
-.titleContainer {
+.title-container {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -226,29 +231,35 @@ div {
 body {
   margin:0;
 }
+
 strong {
   font-style: italic;
 }
+
 body, html {
     height: 100%;
-
 }
+
 blockquote, ul{
     font-family: 'Slabo 27px', serif;
 }
+
 li a {
   text-decoration: none;
   color: purple;
 }
+
 li a:hover {
   color: blue;
   transition: color 0.2s;
 }
+
 button {
   background-color: rgba(0,0,0,0);
   box-shadow: none;
   border: 0;
 }
+
 .me {
   background-image: url('images/Me.jpg');
   background-position: center;
@@ -256,6 +267,7 @@ button {
   width: 150px;
   border-radius: 150px;
 }
+
 #footer {
   background-color: purple;
   color: white;
