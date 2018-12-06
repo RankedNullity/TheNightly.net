@@ -13,7 +13,7 @@
 
   let mainNav;
   function initialize() {
-    mainNav = document.getElementById('mainNav');
+    mainNav = document.getElementById('Main-Nav');
   }
 
   // When the user scrolls the page, execute scrollCheck
@@ -24,9 +24,9 @@
   function scrollCheck() {
     //console.log("y: " + window.pageYOffset);
     if(window.pageYOffset >= navBarHeight) {
-      mainNav.classList.add("scrolled-topNav");
+      mainNav.classList.add("scrolled-top-nav");
     } else {
-      mainNav.classList.remove("scrolled-topNav");
+      mainNav.classList.remove("scrolled-top-nav");
     }
   }
   // Add the navBarHeightclass to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position

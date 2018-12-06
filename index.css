@@ -25,7 +25,7 @@
 }
 
 :root {
-  --topNavHeight: 100px;
+  --top-navHeight: 100px;
   --scrolledTopHeight: 50px;
 }
 
@@ -36,26 +36,24 @@
 
 }
 
-.firstBackground {
-  height: calc(100vh - var(--topNavHeight));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.first-img {
+  height: calc(100vh - var(--top-navHeight));
 }
 
 .background {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.full-size {
   height:100vh;
 }
 
-.backgroundSmall {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.half-size {
   height:55vh;
 }
+
 .about1 {
   /* Image was found at: https://pxhere.com/en/photo/664820*/
   background-image: url('images/nebula.jpg');
@@ -74,13 +72,10 @@
 }
 .parallax {
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /*--------------------------------------------------------------------------*/
-.textSeperator {
+.text-seperator {
   background-color: white;
   display:flex;
   flex-wrap: wrap;
@@ -118,7 +113,7 @@ p, aside {
 
 
 /*---------------------------Navigation Bar----------------------------------*/
-.topNav {
+.top-nav {
   list-style: none;
   overflow: hidden;
   width: 100%;
@@ -127,14 +122,14 @@ p, aside {
   position: fixed;
   transition: background-color 1s ease 0s;
   transition: height .5s, line-height .5s;
-  height:var(--topNavHeight);
+  height:var(--top-navHeight);
   padding-left: 2%;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navButton{
+.nav-button{
     float:left;
     color: white;
     padding: 14px 16px;
@@ -145,23 +140,23 @@ p, aside {
     transition: color 0.2s;
 }
 
-.scrolled-topNav {
+.scrolled-top-nav {
   height: var(--scrolledTopHeight);
   background-color: white;
 }
 
-.scrolled-topNav > .navButton {
+.scrolled-top-nav > .nav-button {
   color:black;
 }
-.scrolled-topNav > .navButton:hover {
+.scrolled-top-nav > .nav-button:hover {
   background-color: rgba(128,128,128, 0.8);
 }
 
-.topNav + * {
-  padding-top: var(--topNavHeight);
+.top-nav + * {
+  padding-top: var(--top-navHeight);
 }
 
-.sideNav {
+.side-nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -176,32 +171,32 @@ p, aside {
   border-radius: 30px 30px 30px 30px;
 }
 
-.sideNav:hover > .navButton {
+.side-nav:hover > .nav-button {
   color:black;
 }
 
-.sideNav:hover {
+.side-nav:hover {
   background-color: white;
   box-shadow: 1px 1px;
 
 }
 
-.navButton:hover{
+.nav-button:hover{
     background-color: rgba(128,128,128, 0.4);
     color: white;
 }
 
-#NameButton:hover{
+#Name-Button:hover{
     background-color: rgba(0, 143, 179, 0.4);
 }
 
-.scrolled-topNav > #NameButton:hover {
+.scrolled-top-nav > #Name-Button:hover {
   background-color: rgba(0, 143, 179, 0.8);
   color: white;
 }
 
 
-.scrolled-topNav > #NameButton {
+.scrolled-top-nav > #Name-Button {
   color: rgb(0, 91, 161);
 }
 
