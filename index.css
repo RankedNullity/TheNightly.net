@@ -1,12 +1,12 @@
 /*
     Name: Jaron Wang
-    Date: October 2, 2018
-    Section: CSE 154 AE
-    This is the css file for all navbar styling on my website.
+    Last Updated: December 6, 2018
+    Stylesheet for thenightly.net
 */
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 .home-title {
   font-family: 'Lora', serif;
   font-size: 300%;
