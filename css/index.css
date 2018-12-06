@@ -33,7 +33,7 @@
 /*-------------------------Image Manipulations-------------------------------*/
 .home-img {
   /* Image was found at: https://www.flickr.com/photos/phploveme/4041898500*/
-  background-image: url(images/pulsar.jpg);
+  background-image: url(../images/pulsar.jpg);
 }
 
 .first-img {
@@ -56,19 +56,19 @@
 
 .about1 {
   /* Image was found at: https://pxhere.com/en/photo/664820*/
-  background-image: url('images/nebula.jpg');
+  background-image: url('../images/nebula.jpg');
 }
 .about2 {
   /* Image Found:  http://staff.washington.edu/paymana/uw_photos.html */
-  background-image: url('images/UW.jpg');
+  background-image: url('../images/UW.jpg');
 }
 .about3 {
   /* Image Found: https://www.flickr.com/photos/otavanopisto/42427999190 */
-  background-image: url('images/AI.jpg');
+  background-image: url('../images/AI.jpg');
 }
 .about4 {
   /* Image found: https://www.flickr.com/photos/158561476@N06/41900335631 */
-  background-image:url('images/FunFacts.jpg');
+  background-image:url('../images/FunFacts.jpg');
 }
 .parallax {
     background-attachment: fixed;
@@ -91,7 +91,7 @@
 }
 
 .photo {
-  background-image: url('images/Me.jpg');
+  background-image: url('../images/Me.jpg');
   background-position: center;
   background-repeat: no-repeat;
   min-height: 300px;
@@ -261,7 +261,7 @@ button {
 }
 
 .me {
-  background-image: url('images/Me.jpg');
+  background-image: url('../images/Me.jpg');
   background-position: center;
   height: 150px;
   width: 150px;

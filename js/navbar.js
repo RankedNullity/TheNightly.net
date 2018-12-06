@@ -20,8 +20,6 @@
   // When the user scrolls the page, execute scrollCheck
   window.addEventListener('scroll', scrollCheck);
 
-  // Get the navbar
-
   function scrollCheck() {
     //console.log("y: " + window.pageYOffset);
     if(window.pageYOffset >= navBarHeight) {
