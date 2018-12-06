@@ -20,6 +20,7 @@
   letter-spacing: 5px;
   color:white;
 }
+
 .cenX {
     text-align: center;
 }
@@ -30,10 +31,9 @@
 }
 
 /*-------------------------Image Manipulations-------------------------------*/
-.homeImg {
+.home-img {
   /* Image was found at: https://www.flickr.com/photos/phploveme/4041898500*/
   background-image: url(images/pulsar.jpg);
-
 }
 
 .first-img {
@@ -199,7 +199,6 @@ p, aside {
 .scrolled-top-nav > #Name-Button {
   color: rgb(0, 91, 161);
 }
-
 
 #lastbutton {
     margin-right: 4%;
