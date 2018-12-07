@@ -1,6 +1,7 @@
 /**
  * Jaron Wang
- * Javascript for the top navigation bar.
+ * Javascript for loading and maintaining the top navigation bar. Utilizes
+* 
  */
 (function() {
   const navBarHeight = 50;
@@ -15,6 +16,7 @@
   let mainNav;
   function initialize() {
     mainNav = document.getElementById('Main-Nav');
+    mainNav.load
   }
 
   // When the user scrolls the page, execute scrollCheck
