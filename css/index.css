@@ -5,17 +5,21 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Lora');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial');
+
+body {
+  font-family: 'Questrial', sans-serif;
+  font-size: 125%;
+}
 
 .home-title {
-  font-family: 'Lora', serif;
-  font-size: 500%;
+font-family: 'Orbitron', sans-serif;
+  font-size: 400%;
   color: white;
   margin-bottom: 0;
 }
 
 .subtitle {
-  font-family: 'Slabo 27px', serif;
   font-size: 30px;
   letter-spacing: 5px;
   color:white;
@@ -26,11 +30,15 @@
 }
 
 :root {
-  --top-navHeight: 100px;
-  --scrolledTopHeight: 50px;
+  --top-navHeight: 110px;
+  --scrolledTopHeight: 60px;
 }
 
 /*-------------------------Image Manipulations-------------------------------*/
+#Name-Button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100%;
+}
 .home-img {
   /* Image was found at: https://www.flickr.com/photos/phploveme/4041898500*/
   background-image: url(../images/pulsar.jpg);
@@ -100,11 +108,6 @@
 
 }
 
-p, aside {
-  font-size: 120%;
-  font-family: 'Lato', sans-serif;
-  line-height: 150%;
-}
 
 .double-list {
   flex: 0 0 50%;
@@ -117,74 +120,53 @@ p, aside {
 
 
 /*---------------------------Navigation Bar----------------------------------*/
+
+.top-nav-container {
+  transition: background-color 1s ease 0s;
+  transition: height .5s, line-height .5s;
+  width: 100%;
+  position: fixed;
+  height:var(--top-navHeight);
+  padding-left: 2%;
+  display:flex;
+  align-items: center;
+}
+
 .top-nav {
   list-style: none;
   overflow: hidden;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
-  position: fixed;
-  transition: background-color 1s ease 0s;
-  transition: height .5s, line-height .5s;
-  height:var(--top-navHeight);
-  padding-left: 2%;
   display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .nav-button{
     float:left;
     color: white;
     padding: 14px 16px;
-    font-size: 125%;
-    text-decoration: none;
-    font-family:monospace;
     transition: background-color 0.2s;
     transition: color 0.2s;
 }
 
-.scrolled-top-nav {
+.scrolled-nav {
   height: var(--scrolledTopHeight);
   background-color: white;
 }
 
-.scrolled-top-nav > .nav-button {
+.scrolled-nav .nav-button {
   color:black;
 }
 
-.scrolled-top-nav > .nav-button:hover {
+.scrolled-nav .nav-button:hover {
   background-color: rgba(128,128,128, 0.8);
 }
 
-.top-nav + * {
+.top-nav-container + * {
   padding-top: var(--top-navHeight);
 }
 
-.side-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  top: calc(50% - 94px);
-  right: 10px;
-  z-index: 1000;
-  position:fixed;
-  display:flex;
-  flex-direction: column;
-  transition: background-color 1s;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.side-nav:hover > .nav-button {
-  color:black;
-}
-
-.side-nav:hover {
-  background-color: white;
-  box-shadow: 1px 1px;
-
-}
 
 .nav-button:hover{
     background-color: rgba(128,128,128, 0.4);
@@ -195,14 +177,13 @@ p, aside {
     background-color: rgba(0, 143, 179, 0.4);
 }
 
-.scrolled-top-nav > #Name-Button:hover {
+.scrolled-nav #Name-Button:hover {
   background-color: rgba(0, 143, 179, 0.8);
   color: white;
 }
 
-
-.scrolled-top-nav > #Name-Button {
-  color: rgb(0, 91, 161);
+.scrolled-nav #Name-Button {
+  color: rgb(0, 143, 179);
 }
 
 #lastbutton {
@@ -224,16 +205,9 @@ div {
   display: block;
 }
 
-.white {
-  color: white;
-}
 
 body {
   margin:0;
-}
-
-strong {
-  font-style: italic;
 }
 
 body, html {
@@ -244,20 +218,14 @@ blockquote, ul{
     font-family: 'Slabo 27px', serif;
 }
 
-li a {
+a {
   text-decoration: none;
   color: purple;
 }
 
 li a:hover {
   color: blue;
-  transition: color 0.2s;
-}
-
-button {
-  background-color: rgba(0,0,0,0);
-  box-shadow: none;
-  border: 0;
+  transition: color 0.15s;
 }
 
 .me {

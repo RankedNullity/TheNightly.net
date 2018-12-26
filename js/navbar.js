@@ -23,9 +23,9 @@
   function scrollCheck() {
     //console.log("y: " + window.pageYOffset);
     if(window.pageYOffset >= navBarHeight) {
-      mainNav.classList.add("scrolled-top-nav");
+      mainNav.classList.add("scrolled-nav");
     } else {
-      mainNav.classList.remove("scrolled-top-nav");
+      mainNav.classList.remove("scrolled-nav");
     }
   }
 
