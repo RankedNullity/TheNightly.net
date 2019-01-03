@@ -1,0 +1,13 @@
+<section class="text-separator">
+  <div class="section-title">
+    About the Name
+  </div>
+  <div class="description">
+    <p>
+
+
+      <br><br>
+      <a href="blog.html">Read more >></a>
+   </p>
+  </div>
+</section>
