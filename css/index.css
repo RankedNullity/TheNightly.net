@@ -1,10 +1,8 @@
 /*
     Name: Jaron Wang
-    Last Updated: December 6, 2018
+    Last Updated: December 28, 2018
     Stylesheet for thenightly.net
 */
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-@import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial');
 
 body {
@@ -19,8 +17,19 @@ font-family: 'Orbitron', sans-serif;
   margin-bottom: 0;
 }
 
+.section-title {
+  padding-right: 60px;
+  padding-left: 60px;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .subtitle {
-  font-size: 30px;
+  font-size: 200%;
   letter-spacing: 5px;
   color:white;
 }
@@ -54,13 +63,6 @@ font-family: 'Orbitron', sans-serif;
   background-size: cover;
 }
 
-.full-size {
-  height:100vh;
-}
-
-.half-size {
-  height:55vh;
-}
 
 .about1 {
   /* Image was found at: https://pxhere.com/en/photo/664820*/
@@ -83,7 +85,7 @@ font-family: 'Orbitron', sans-serif;
 }
 
 /*--------------------------------------------------------------------------*/
-.text-seperator {
+.text-separator {
   background-color: white;
   display:flex;
   flex-wrap: wrap;
@@ -108,21 +110,10 @@ font-family: 'Orbitron', sans-serif;
 
 }
 
-
-.double-list {
-  flex: 0 0 50%;
-  max-width: 50%;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  flex-direction: row;
-  line-height: 150%;
-}
-
-
 /*---------------------------Navigation Bar----------------------------------*/
 
 .top-nav-container {
-  transition: background-color 1s ease 0s;
+  transition: background-color .5s ease 0s;
   transition: height .5s, line-height .5s;
   width: 100%;
   position: fixed;
@@ -146,8 +137,8 @@ font-family: 'Orbitron', sans-serif;
     float:left;
     color: white;
     padding: 14px 16px;
-    transition: background-color 0.2s;
-    transition: color 0.2s;
+    transition: background-color 0.1s;
+    transition: color 0.1s;
 }
 
 .scrolled-nav {
@@ -162,7 +153,12 @@ font-family: 'Orbitron', sans-serif;
 .scrolled-nav .nav-button:hover {
   background-color: rgba(128,128,128, 0.8);
 }
-
+.full-size {
+  height:100vh;
+}
+.half-size {
+  height: 35vh;
+}
 .top-nav-container + * {
   padding-top: var(--top-navHeight);
 }
@@ -200,6 +196,10 @@ font-family: 'Orbitron', sans-serif;
   align-items: center;
   color:white;
 }
+.title-container h1 {
+  margin-top: 0;
+}
+
 
 div {
   display: block;
@@ -237,9 +237,12 @@ li a:hover {
 }
 
 #footer {
-  background-color: purple;
+  background-color: rgb(106,106,106);
   color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
