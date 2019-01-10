@@ -1,22 +1,35 @@
 /*
     Name: Jaron Wang
-    Last Updated: December 6, 2018
+    Last Updated: December 28, 2018
     Stylesheet for thenightly.net
 */
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-@import url('https://fonts.googleapis.com/css?family=Lora');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial');
+
+body {
+  font-family: 'Questrial', sans-serif;
+  font-size: 125%;
+}
 
 .home-title {
-  font-family: 'Lora', serif;
-  font-size: 300%;
+font-family: 'Orbitron', sans-serif;
+  font-size: 400%;
   color: white;
   margin-bottom: 0;
 }
 
+.section-title {
+  padding-right: 60px;
+  padding-left: 60px;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .subtitle {
-  font-family: 'Slabo 27px', serif;
-  font-size: 30px;
+  font-size: 200%;
   letter-spacing: 5px;
   color:white;
 }
@@ -26,11 +39,15 @@
 }
 
 :root {
-  --top-navHeight: 100px;
-  --scrolledTopHeight: 50px;
+  --top-navHeight: 110px;
+  --scrolledTopHeight: 60px;
 }
 
 /*-------------------------Image Manipulations-------------------------------*/
+#Name-Button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100%;
+}
 .home-img {
   /* Image was found at: https://www.flickr.com/photos/phploveme/4041898500*/
   background-image: url(../images/pulsar.jpg);
@@ -46,13 +63,6 @@
   background-size: cover;
 }
 
-.full-size {
-  height:100vh;
-}
-
-.half-size {
-  height:55vh;
-}
 
 .about1 {
   /* Image was found at: https://pxhere.com/en/photo/664820*/
@@ -75,7 +85,7 @@
 }
 
 /*--------------------------------------------------------------------------*/
-.text-seperator {
+.text-separator {
   background-color: white;
   display:flex;
   flex-wrap: wrap;
@@ -100,91 +110,59 @@
 
 }
 
-p, aside {
-  font-size: 120%;
-  font-family: 'Lato', sans-serif;
-  line-height: 150%;
-}
-
-.double-list {
-  flex: 0 0 50%;
-  max-width: 50%;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  flex-direction: row;
-  line-height: 150%;
-}
-
-
 /*---------------------------Navigation Bar----------------------------------*/
+
+.top-nav-container {
+  transition: background-color .5s ease 0s;
+  transition: height .5s, line-height .5s;
+  width: 100%;
+  position: fixed;
+  height:var(--top-navHeight);
+  padding-left: 2%;
+  display:flex;
+  align-items: center;
+}
+
 .top-nav {
   list-style: none;
   overflow: hidden;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
-  position: fixed;
-  transition: background-color 1s ease 0s;
-  transition: height .5s, line-height .5s;
-  height:var(--top-navHeight);
-  padding-left: 2%;
   display:flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .nav-button{
     float:left;
     color: white;
     padding: 14px 16px;
-    font-size: 125%;
-    text-decoration: none;
-    font-family:monospace;
-    transition: background-color 0.2s;
-    transition: color 0.2s;
+    transition: background-color 0.1s;
+    transition: color 0.1s;
 }
 
-.scrolled-top-nav {
+.scrolled-nav {
   height: var(--scrolledTopHeight);
   background-color: white;
 }
 
-.scrolled-top-nav > .nav-button {
+.scrolled-nav .nav-button {
   color:black;
 }
 
-.scrolled-top-nav > .nav-button:hover {
+.scrolled-nav .nav-button:hover {
   background-color: rgba(128,128,128, 0.8);
 }
-
-.top-nav + * {
+.full-size {
+  height:100vh;
+}
+.half-size {
+  height: 35vh;
+}
+.top-nav-container + * {
   padding-top: var(--top-navHeight);
 }
 
-.side-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  top: calc(50% - 94px);
-  right: 10px;
-  z-index: 1000;
-  position:fixed;
-  display:flex;
-  flex-direction: column;
-  transition: background-color 1s;
-  border-radius: 30px 30px 30px 30px;
-}
-
-.side-nav:hover > .nav-button {
-  color:black;
-}
-
-.side-nav:hover {
-  background-color: white;
-  box-shadow: 1px 1px;
-
-}
 
 .nav-button:hover{
     background-color: rgba(128,128,128, 0.4);
@@ -195,14 +173,13 @@ p, aside {
     background-color: rgba(0, 143, 179, 0.4);
 }
 
-.scrolled-top-nav > #Name-Button:hover {
+.scrolled-nav #Name-Button:hover {
   background-color: rgba(0, 143, 179, 0.8);
   color: white;
 }
 
-
-.scrolled-top-nav > #Name-Button {
-  color: rgb(0, 91, 161);
+.scrolled-nav #Name-Button {
+  color: rgb(0, 143, 179);
 }
 
 #lastbutton {
@@ -219,21 +196,18 @@ p, aside {
   align-items: center;
   color:white;
 }
+.title-container h1 {
+  margin-top: 0;
+}
+
 
 div {
   display: block;
 }
 
-.white {
-  color: white;
-}
 
 body {
   margin:0;
-}
-
-strong {
-  font-style: italic;
 }
 
 body, html {
@@ -244,20 +218,14 @@ blockquote, ul{
     font-family: 'Slabo 27px', serif;
 }
 
-li a {
+a {
   text-decoration: none;
   color: purple;
 }
 
 li a:hover {
   color: blue;
-  transition: color 0.2s;
-}
-
-button {
-  background-color: rgba(0,0,0,0);
-  box-shadow: none;
-  border: 0;
+  transition: color 0.15s;
 }
 
 .me {
@@ -269,9 +237,12 @@ button {
 }
 
 #footer {
-  background-color: purple;
+  background-color: rgb(106,106,106);
   color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
