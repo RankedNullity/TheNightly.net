@@ -1,0 +1,78 @@
+/*
+    Name: Jaron Wang
+    Last Updated: December 28, 2018
+    Stylesheet for thenightly.net navbar on every page except the homepage.
+*/
+/*---------------------------Navigation Bar----------------------------------*/
+
+.top-nav-container {
+  transition: background-color .5s ease 0s;
+  transition: height .5s, line-height .5s;
+  width: 100%;
+  position: fixed;
+  height:var(--top-navHeight);
+  padding-left: 2%;
+  display:flex;
+  align-items: center;
+}
+
+.top-nav {
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-button{
+    float:left;
+    color: white;
+    padding: 14px 16px;
+    transition: background-color 0.1s;
+    transition: color 0.1s;
+}
+
+.scrolled-nav {
+  height: var(--scrolledTopHeight);
+  background-color: white;
+}
+
+.scrolled-nav .nav-button {
+  color:black;
+}
+
+.scrolled-nav .nav-button:hover {
+  background-color: rgba(128,128,128, 0.8);
+}
+
+.top-nav-container + * {
+  padding-top: var(--top-navHeight);
+}
+
+
+.nav-button:hover{
+    background-color: rgba(128,128,128, 0.4);
+    color: white;
+}
+
+#Name-Button:hover{
+    background-color: rgba(0, 143, 179, 0.4);
+}
+
+.scrolled-nav #Name-Button:hover {
+  background-color: rgba(0, 143, 179, 0.8);
+  color: white;
+}
+
+.scrolled-nav #Name-Button {
+  color: rgb(0, 143, 179);
+}
+
+#lastbutton {
+    margin-right: 4%;
+    margin-left: auto;
+}
+
+/*--------------------------------------------------------------------------*/
