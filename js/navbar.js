@@ -1,6 +1,7 @@
 /**
  * Jaron Wang
- * Javascript for the top navigation bar.
+ * Javascript for loading and maintaining the top navigation bar. Utilizes
+* 2
  */
 (function() {
   const navBarHeight = 50;
